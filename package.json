@@ -1,0 +1,14 @@
+{
+  "name": "websockets-and-shapes",
+  "version": "0.0.1",
+  "description": "test",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0",
+    "jquery": "^3.1.0",
+    "lodash": "^4.15.0",
+    "mongoose": "^4.5.8",
+    "socket.io": "^1.4.8"
+  }
+}

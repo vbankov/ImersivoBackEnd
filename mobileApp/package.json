@@ -1,0 +1,21 @@
+{
+  "name": "vasilis-websocket-client",
+  "version": "4.0.2",
+  "description": "> Mobile app as part of imersivo's tech challenge",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Vasilis Bankov",
+  "license": "Apache-2.0.0",
+  "keywords": [
+    "ecosystem:phonegap",
+    "ecosystem:cordova",
+    "cordova:template",
+    "phonegap:template"
+  ],
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}

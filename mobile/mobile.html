@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web client</title>
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/cover.css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+    
+    
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Mobile</h3>
+              <!--<nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>-->
+            </div>
+          </div>
+
+          <div class="inner cover">
+
+            <p class="lead" id="message"></p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-default" id="button-categories">Categories</a>
+              <a href="#" class="btn btn-lg btn-default" id="button-colors">Colors</a>
+            </p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <form action="">
+        <input id="m" autocomplete="off" /><button>Send</button>
+    </form>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        // This is the mobile client
+        var socket = io();
+        $('#button-categories').click(function(){
+            socket.emit('message', 'shape');
+            return false;
+        });
+        $('#button-colors').click(function(){
+            socket.emit('message', 'color');
+            return false;
+        });
+        
+    </script>
+</body>
+</html>

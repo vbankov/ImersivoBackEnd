@@ -106,7 +106,7 @@ io.on('connection', function(socket){
   });
 });
 
-http.listen(3000, function(){
+http.listen(80, function(){
   console.info(new Date()+' server listening on *:3000');
 });
 

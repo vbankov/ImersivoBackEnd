@@ -106,7 +106,7 @@ io.on('connection', function(socket){
   });
 });
 
-var port = 5000;
+var port = process.env.PORT || 5000;
 
 http.listen(port, function(){
   console.info(new Date()+' server listening on *:'+port);

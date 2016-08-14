@@ -6,12 +6,12 @@
     <feature name="Device">
         <param name="browser-package" value="Device" />
     </feature>
-    <name>Hello World</name>
+    <name>Mobile websockets client</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Mobile app as part of imersivo's tech challenge
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="vasilis.bankov@gmail.com" href="">
+        Vasilis Bankov
     </author>
     <content src="index.html" />
     <icon src="icon.png" />

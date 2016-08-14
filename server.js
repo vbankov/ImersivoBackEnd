@@ -106,8 +106,10 @@ io.on('connection', function(socket){
   });
 });
 
-http.listen(80, function(){
-  console.info(new Date()+' server listening on *:3000');
+var port = 5000;
+
+http.listen(port, function(){
+  console.info(new Date()+' server listening on *:'+port);
 });
 
 function updateStats(s){
